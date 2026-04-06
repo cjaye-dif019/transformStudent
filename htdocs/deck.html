@@ -20,6 +20,8 @@
 				padding: 40px;
 			}
 			#deck div{
+				position: absolute;
+				transform: rotate(270deg);
 				border: 3px solid black;
 				height: 30vh;
 				width: 20vw;
@@ -32,6 +34,27 @@
 			#deck div:hover{
 				border: 3px solid yellow;
 			}
+
+			#deck:hover div:first-child{
+				transform: rotate(50deg);
+			}
+
+			#deck:hover div:nth-child(2){
+				transform: rotate(60deg);
+			}
+
+			#deck:hover div:nth-child(3){
+				transform: rotate(70deg);
+			}
+
+			#deck:hover div:nth-child(4){
+				transform: rotate(80deg);
+			}
+
+			#deck:hover div:nth-child(5){
+				transform: rotate(90deg);
+			}
+
 			#deck div:first-child:hover{
 				background-color: yellow;
 			}
